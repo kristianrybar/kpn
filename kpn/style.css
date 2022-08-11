@@ -1,0 +1,95 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(231, 241, 252), rgb(31, 100, 165));
+}
+
+.container {
+    max-width: 500px;
+    background-color: #fff;
+    padding: 30px 20px;
+    padding-bottom: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.scores {
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+.weapons {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.weapons button {
+    background-color: rgb(46, 36, 129);
+    color: rgb(234, 234, 255);
+    border: none;
+    font-size: 20px;
+    padding: 10px 5px;
+    width: 120px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.details {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.details, .scores {
+    font-size: 1rem;
+}
+
+#history {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#history td, #history th {
+    border: 1px solid rgb(182, 182, 182);
+    padding: 8px;
+}
+
+#history th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0446aa;
+    color: rgb(230, 240, 255);
+}
+#result {
+    padding: 4px 0;
+    max-width: 100%;    
+}
+
+.win {
+    background-color: lightgreen;
+}
+
+.lose {
+    background-color: salmon;
+}
+
+.draw {
+    background-color: gold;
+}

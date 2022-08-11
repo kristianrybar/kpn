@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Hra - kameň, papier, nožnice</title>
+</head>
+<body>
+   <div class="container">
+        <div class="scores">
+            <p>
+                Computer: <span id="computer_score">0</span>
+            </p>
+            <p>
+                You: <span id="user_score">0</span>
+            </p>
+        </div> 
+        <div class="weapons">
+            <button class="mr-5" onclick="checker('K')">
+                Kameň
+            </button>
+            <button class="mr-5" onclick="checker('P')">
+                Papier
+            </button>
+            <button onclick="checker('N')"> 
+                Nožnice
+            </button>
+        </div>
+        <div class="details">
+            <p id="user_choice"></p>
+            <p id="computer_choice"></p>
+            <p id="result"></p>
+        </div>
+        <table id="history">
+            <tr>
+                <th>Rank</th>
+                <th>User Choice</th>
+                <th>Computer Choice</th>
+                <th>Winner</th>
+            </tr>
+        </table>
+   </div>
+
+<script src="./jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./main.js"></script>
+
+</body>
+</html>
